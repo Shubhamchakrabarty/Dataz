@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/counters"
+        >
+
+        <TextView
+            android:id="@+id/data_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Usage : "
+            android:textSize="80px"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:textAlignment="center"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/dataval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="demo"
+            android:textSize="80px"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/data_label"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rem_counters"
+        app:layout_constraintTop_toBottomOf="@+id/counters"
+        >
+
+        <TextView
+            android:id="@+id/rem_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Remaining : "
+            android:textSize="80px"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/remval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="80px"
+            app:layout_constraintTop_toBottomOf="@+id/rem_label"
+            android:hint="rem"
+        />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/remval"
+            android:text="Total data USED :"
+            android:textSize="60px"
+            />
+
+        <TextView
+            android:id="@+id/sizepack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="70px"
+            android:text="Pack Size :"
+            app:layout_constraintTop_toBottomOf="@+id/total"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
