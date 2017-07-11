@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/launch_page"
     tools:context="com.example.mkz.dataz.Launch">
 
     <EditText
         android:id="@+id/packsize"
         android:textSize="50px"
+        android:background="@color/orange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Dack Pack Size"/>
@@ -18,5 +20,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Proceed"
+        android:background="@color/blue"
         app:layout_constraintTop_toBottomOf="@+id/packsize"/>
 </android.support.constraint.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.mkz.dataz;
 
+import android.graphics.Color;
 import android.net.TrafficStats;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
@@ -32,8 +33,16 @@ public class MainActivity extends AppCompatActivity {
 
             total.setText("Total Data :"+Long.toString(totalBytes));
             dataval.setText(Long.toString(totalBytes));
-            remval.setText(Long.toString(remainingdata));
 
+            if(remainingdata>0)
+            {
+                remval.setText(Long.toString(remainingdata));
+            }
+            else
+            {
+                remval.setText("Limit Exceeded");
+                remval.setTextColor(Color.RED);
+            }
             handler.postDelayed(mRunnable,1000);
 
         }
