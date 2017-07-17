@@ -63,7 +63,7 @@
             android:textSize="80px"
             android:background="@color/Lavender"
             app:layout_constraintTop_toBottomOf="@+id/rem_label"
-        />
+            />
 
         <TextView
             android:id="@+id/total"
@@ -82,8 +82,27 @@
             android:textSize="70px"
             android:text="Pack Size :"
             android:background="@color/Orange"
-            app:layout_constraintTop_toBottomOf="@+id/total"/>
+            app:layout_constraintTop_toBottomOf="@+id/total"
+            />
 
+        <Button
+            android:id="@+id/showbttn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            app:layout_constraintTop_toBottomOf="@+id/sizepack"/>
+
+
+        <TextView
+            android:id="@+id/showtv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/showbttn"
+            android:textSize="80px"
+            android:text="hey"
+            android:textAlignment="center"
+            android:background="@color/Chartreuse"
+            />
     </android.support.constraint.ConstraintLayout>
 
 
